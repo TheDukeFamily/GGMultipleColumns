@@ -12,6 +12,12 @@
 		042F1F151F146FD4008BB104 /* GGPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1F111F146FD4008BB104 /* GGPersonModel.m */; };
 		042F1F181F1471E1008BB104 /* AddressBookTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1F171F1471E1008BB104 /* AddressBookTableVC.m */; };
 		042F1F1E1F14B3C1008BB104 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1F1D1F14B3C1008BB104 /* MainTableViewController.m */; };
+		042F1F221F14BBF2008BB104 /* DrawerTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1F211F14BBF2008BB104 /* DrawerTabBarController.m */; };
+		042F1F281F14BD14008BB104 /* DrawerHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1F271F14BD14008BB104 /* DrawerHomeViewController.m */; };
+		042F1F2B1F14C09D008BB104 /* DrawerNullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1F2A1F14C09D008BB104 /* DrawerNullViewController.m */; };
+		042F1F2E1F14C2CA008BB104 /* DrawerLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1F2D1F14C2CA008BB104 /* DrawerLeftViewController.m */; };
+		042F1F311F14CE33008BB104 /* UIView+LCFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1F301F14CE33008BB104 /* UIView+LCFrame.m */; };
+		042F1F341F14D23B008BB104 /* DrawerNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1F331F14D23B008BB104 /* DrawerNavigationController.m */; };
 		0449AADC1F0CBECD003F5AE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0449AADB1F0CBECD003F5AE6 /* main.m */; };
 		0449AADF1F0CBECD003F5AE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0449AADE1F0CBECD003F5AE6 /* AppDelegate.m */; };
 		0449AAE81F0CBECD003F5AE6 /* MultipleColumns.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0449AAE61F0CBECD003F5AE6 /* MultipleColumns.xcdatamodeld */; };
@@ -51,6 +57,18 @@
 		042F1F171F1471E1008BB104 /* AddressBookTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookTableVC.m; sourceTree = "<group>"; };
 		042F1F1C1F14B3C1008BB104 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		042F1F1D1F14B3C1008BB104 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		042F1F201F14BBF2008BB104 /* DrawerTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerTabBarController.h; sourceTree = "<group>"; };
+		042F1F211F14BBF2008BB104 /* DrawerTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerTabBarController.m; sourceTree = "<group>"; };
+		042F1F261F14BD14008BB104 /* DrawerHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerHomeViewController.h; sourceTree = "<group>"; };
+		042F1F271F14BD14008BB104 /* DrawerHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerHomeViewController.m; sourceTree = "<group>"; };
+		042F1F291F14C09D008BB104 /* DrawerNullViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerNullViewController.h; sourceTree = "<group>"; };
+		042F1F2A1F14C09D008BB104 /* DrawerNullViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerNullViewController.m; sourceTree = "<group>"; };
+		042F1F2C1F14C2CA008BB104 /* DrawerLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerLeftViewController.h; sourceTree = "<group>"; };
+		042F1F2D1F14C2CA008BB104 /* DrawerLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerLeftViewController.m; sourceTree = "<group>"; };
+		042F1F2F1F14CE33008BB104 /* UIView+LCFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LCFrame.h"; sourceTree = "<group>"; };
+		042F1F301F14CE33008BB104 /* UIView+LCFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LCFrame.m"; sourceTree = "<group>"; };
+		042F1F321F14D23B008BB104 /* DrawerNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerNavigationController.h; sourceTree = "<group>"; };
+		042F1F331F14D23B008BB104 /* DrawerNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerNavigationController.m; sourceTree = "<group>"; };
 		0449AAD71F0CBECD003F5AE6 /* MultipleColumns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipleColumns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0449AADB1F0CBECD003F5AE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0449AADD1F0CBECD003F5AE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,6 +141,16 @@
 		042F1F1F1F14B675008BB104 /* RealizeDrawerDemo(抽屉实现) */ = {
 			isa = PBXGroup;
 			children = (
+				042F1F321F14D23B008BB104 /* DrawerNavigationController.h */,
+				042F1F331F14D23B008BB104 /* DrawerNavigationController.m */,
+				042F1F201F14BBF2008BB104 /* DrawerTabBarController.h */,
+				042F1F211F14BBF2008BB104 /* DrawerTabBarController.m */,
+				042F1F261F14BD14008BB104 /* DrawerHomeViewController.h */,
+				042F1F271F14BD14008BB104 /* DrawerHomeViewController.m */,
+				042F1F2C1F14C2CA008BB104 /* DrawerLeftViewController.h */,
+				042F1F2D1F14C2CA008BB104 /* DrawerLeftViewController.m */,
+				042F1F291F14C09D008BB104 /* DrawerNullViewController.h */,
+				042F1F2A1F14C09D008BB104 /* DrawerNullViewController.m */,
 			);
 			path = "RealizeDrawerDemo(抽屉实现)";
 			sourceTree = "<group>";
@@ -159,6 +187,8 @@
 				0449AADE1F0CBECD003F5AE6 /* AppDelegate.m */,
 				042F1F1C1F14B3C1008BB104 /* MainTableViewController.h */,
 				042F1F1D1F14B3C1008BB104 /* MainTableViewController.m */,
+				042F1F2F1F14CE33008BB104 /* UIView+LCFrame.h */,
+				042F1F301F14CE33008BB104 /* UIView+LCFrame.m */,
 				0449AAE91F0CBECD003F5AE6 /* Assets.xcassets */,
 				0449AAEB1F0CBECD003F5AE6 /* LaunchScreen.storyboard */,
 				0449AAEE1F0CBECD003F5AE6 /* Info.plist */,
@@ -405,12 +435,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				042F1F151F146FD4008BB104 /* GGPersonModel.m in Sources */,
+				042F1F2B1F14C09D008BB104 /* DrawerNullViewController.m in Sources */,
 				042F1F131F146FD4008BB104 /* GGAddressBookHandle.m in Sources */,
+				042F1F2E1F14C2CA008BB104 /* DrawerLeftViewController.m in Sources */,
+				042F1F221F14BBF2008BB104 /* DrawerTabBarController.m in Sources */,
 				0449AAE81F0CBECD003F5AE6 /* MultipleColumns.xcdatamodeld in Sources */,
 				042F1F181F1471E1008BB104 /* AddressBookTableVC.m in Sources */,
 				042F1F141F146FD4008BB104 /* GGGetAddressBook.m in Sources */,
+				042F1F341F14D23B008BB104 /* DrawerNavigationController.m in Sources */,
 				0449AADF1F0CBECD003F5AE6 /* AppDelegate.m in Sources */,
 				0449AADC1F0CBECD003F5AE6 /* main.m in Sources */,
+				042F1F281F14BD14008BB104 /* DrawerHomeViewController.m in Sources */,
+				042F1F311F14CE33008BB104 /* UIView+LCFrame.m in Sources */,
 				042F1F1E1F14B3C1008BB104 /* MainTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,6 +597,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LeShare.www.MultipleColumns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -575,6 +612,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LeShare.www.MultipleColumns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};

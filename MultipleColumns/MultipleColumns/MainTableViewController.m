@@ -7,9 +7,14 @@
 //
 
 #import "MainTableViewController.h"
+
 #import "AddressBookTableVC.h"
 
-@interface MainTableViewController ()
+#import "DrawerTabBarController.h"
+#import "DrawerLeftViewController.h"
+#import "RESideMenu.h"
+
+@interface MainTableViewController ()<RESideMenuDelegate>
 {
     NSArray *_titleArr;
 }
@@ -21,7 +26,7 @@
     [super viewDidLoad];
     self.navigationItem.title = @"一些小的示例";
     
-    _titleArr = @[@"联系人列表"];
+    _titleArr = @[@"联系人列表",@"抽屉效果"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,7 +60,28 @@
             [self.navigationController pushViewController:[[AddressBookTableVC alloc] init] animated:YES];
         }
             break;
-            
+        case 1:
+        {
+            DrawerTabBarController *tabbar = [[DrawerTabBarController alloc] init];
+            DrawerLeftViewController *leftVC = [[DrawerLeftViewController alloc] init];
+            RESideMenu *sideMenu = [[RESideMenu alloc] initWithContentViewController:tabbar
+                                                                 leftMenuViewController:leftVC
+                                                                rightMenuViewController:nil];
+//            sideMenu.backgroundImage = [UIImage imageNamed:@"Stars@2x.png"];
+            sideMenu.menuPreferredStatusBarStyle = 1; // UIStatusBarStyleLightContent
+            sideMenu.delegate = self;
+            sideMenu.contentViewShadowColor = [UIColor blackColor];
+            sideMenu.contentViewShadowOffset = CGSizeMake(0, 0);
+            sideMenu.contentViewShadowOpacity = 0.6;
+            sideMenu.contentViewShadowRadius = 20;
+            sideMenu.contentViewShadowEnabled = YES;
+            sideMenu.scaleMenuView= NO;
+            sideMenu.contentViewScaleValue = 1;
+            sideMenu.contentViewInPortraitOffsetCenterX = ([UIScreen mainScreen].bounds.size.width/2)-80;
+            //    _sideMenuViewController.scaleContentView = NO;
+            [self presentViewController:sideMenu animated:YES completion:nil];
+        }
+            break;
         default:
             break;
     }
