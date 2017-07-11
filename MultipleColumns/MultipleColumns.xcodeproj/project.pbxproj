@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042F1F131F146FD4008BB104 /* GGAddressBookHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1F0D1F146FD4008BB104 /* GGAddressBookHandle.m */; };
+		042F1F141F146FD4008BB104 /* GGGetAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1F0F1F146FD4008BB104 /* GGGetAddressBook.m */; };
+		042F1F151F146FD4008BB104 /* GGPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1F111F146FD4008BB104 /* GGPersonModel.m */; };
+		042F1F181F1471E1008BB104 /* AddressBookTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1F171F1471E1008BB104 /* AddressBookTableVC.m */; };
 		0449AADC1F0CBECD003F5AE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0449AADB1F0CBECD003F5AE6 /* main.m */; };
 		0449AADF1F0CBECD003F5AE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0449AADE1F0CBECD003F5AE6 /* AppDelegate.m */; };
 		0449AAE51F0CBECD003F5AE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0449AAE31F0CBECD003F5AE6 /* Main.storyboard */; };
@@ -39,6 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042F1F0C1F146FD4008BB104 /* GGAddressBookHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGAddressBookHandle.h; sourceTree = "<group>"; };
+		042F1F0D1F146FD4008BB104 /* GGAddressBookHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGAddressBookHandle.m; sourceTree = "<group>"; };
+		042F1F0E1F146FD4008BB104 /* GGGetAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGGetAddressBook.h; sourceTree = "<group>"; };
+		042F1F0F1F146FD4008BB104 /* GGGetAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGGetAddressBook.m; sourceTree = "<group>"; };
+		042F1F101F146FD4008BB104 /* GGPersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGPersonModel.h; sourceTree = "<group>"; };
+		042F1F111F146FD4008BB104 /* GGPersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGPersonModel.m; sourceTree = "<group>"; };
+		042F1F121F146FD4008BB104 /* GGSingLeton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGSingLeton.h; sourceTree = "<group>"; };
+		042F1F161F1471E1008BB104 /* AddressBookTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookTableVC.h; sourceTree = "<group>"; };
+		042F1F171F1471E1008BB104 /* AddressBookTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookTableVC.m; sourceTree = "<group>"; };
 		0449AAD71F0CBECD003F5AE6 /* MultipleColumns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipleColumns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0449AADB1F0CBECD003F5AE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0449AADD1F0CBECD003F5AE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +104,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042F1F0A1F146FD4008BB104 /* AddressBookDemo(通讯录获取) */ = {
+			isa = PBXGroup;
+			children = (
+				042F1F0B1F146FD4008BB104 /* GGGetAddressBook */,
+				042F1F161F1471E1008BB104 /* AddressBookTableVC.h */,
+				042F1F171F1471E1008BB104 /* AddressBookTableVC.m */,
+			);
+			path = "AddressBookDemo(通讯录获取)";
+			sourceTree = "<group>";
+		};
+		042F1F0B1F146FD4008BB104 /* GGGetAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				042F1F0C1F146FD4008BB104 /* GGAddressBookHandle.h */,
+				042F1F0D1F146FD4008BB104 /* GGAddressBookHandle.m */,
+				042F1F0E1F146FD4008BB104 /* GGGetAddressBook.h */,
+				042F1F0F1F146FD4008BB104 /* GGGetAddressBook.m */,
+				042F1F101F146FD4008BB104 /* GGPersonModel.h */,
+				042F1F111F146FD4008BB104 /* GGPersonModel.m */,
+				042F1F121F146FD4008BB104 /* GGSingLeton.h */,
+			);
+			path = GGGetAddressBook;
+			sourceTree = "<group>";
+		};
 		0449AACE1F0CBECD003F5AE6 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +153,7 @@
 		0449AAD91F0CBECD003F5AE6 /* MultipleColumns */ = {
 			isa = PBXGroup;
 			children = (
+				042F1F0A1F146FD4008BB104 /* AddressBookDemo(通讯录获取) */,
 				04A0B5AB1F0CCDC5000B2EEC /* implementation(实现文件) */,
 				0449AB101F0CBFD5003F5AE6 /* GGDrawing(绘图) */,
 				0449AADD1F0CBECD003F5AE6 /* AppDelegate.h */,
@@ -389,8 +427,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A0B5AF1F0CCE15000B2EEC /* DragViewController.m in Sources */,
+				042F1F151F146FD4008BB104 /* GGPersonModel.m in Sources */,
+				042F1F131F146FD4008BB104 /* GGAddressBookHandle.m in Sources */,
 				04A0B5B81F0CCEE9000B2EEC /* MainTableViewController.m in Sources */,
 				0449AAE81F0CBECD003F5AE6 /* MultipleColumns.xcdatamodeld in Sources */,
+				042F1F181F1471E1008BB104 /* AddressBookTableVC.m in Sources */,
+				042F1F141F146FD4008BB104 /* GGGetAddressBook.m in Sources */,
 				0449AADF1F0CBECD003F5AE6 /* AppDelegate.m in Sources */,
 				0449AADC1F0CBECD003F5AE6 /* main.m in Sources */,
 				04A0B5B21F0CCE46000B2EEC /* DragLeftViewController.m in Sources */,
@@ -547,6 +589,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JZ3VLLKWD9;
 				INFOPLIST_FILE = MultipleColumns/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LeShare.www.MultipleColumns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -560,6 +603,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JZ3VLLKWD9;
 				INFOPLIST_FILE = MultipleColumns/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LeShare.www.MultipleColumns;
 				PRODUCT_NAME = "$(TARGET_NAME)";

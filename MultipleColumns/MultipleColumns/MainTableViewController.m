@@ -24,7 +24,6 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     _titleArr = @[@"抽屉"];
-    
 }
 
 - (void)didReceiveMemoryWarning {
