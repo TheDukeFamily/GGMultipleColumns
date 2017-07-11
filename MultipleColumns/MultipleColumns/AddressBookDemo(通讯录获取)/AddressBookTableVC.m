@@ -93,34 +93,29 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseIdentifier];
     }
+    
+    GGPersonModel *people;
     if (!self.selectedBtn.selected) {
-        GGPersonModel *people = _dataSource[indexPath.row];
-        cell.imageView.image = people.headerImage ? people.headerImage : [UIImage imageNamed:@"defult"];
-        CGSize itemSize = CGSizeMake(60, 60);
-        UIGraphicsBeginImageContextWithOptions(itemSize, NO, UIScreen.mainScreen.scale);
-        CGRect imageRect = CGRectMake(0.0, 0.0, itemSize.width, itemSize.height);
-        [cell.imageView.image drawInRect:imageRect];
-        cell.imageView.image = UIGraphicsGetImageFromCurrentImageContext();
-        UIGraphicsEndImageContext();
-        cell.imageView.layer.cornerRadius = 60/2;
-        cell.imageView.clipsToBounds = YES;
-        cell.textLabel.text = people.name;
+        people = _dataSource[indexPath.row];
     }else{
         NSString *key = _keys[indexPath.section];
-        GGPersonModel *people = [_contactPeopleDict[key] objectAtIndex:indexPath.row];
-        
-        cell.imageView.image = people.headerImage ? people.headerImage : [UIImage imageNamed:@"defult"];
-        CGSize itemSize = CGSizeMake(60, 60);
-        UIGraphicsBeginImageContextWithOptions(itemSize, NO, UIScreen.mainScreen.scale);
-        CGRect imageRect = CGRectMake(0.0, 0.0, itemSize.width, itemSize.height);
-        [cell.imageView.image drawInRect:imageRect];
-        cell.imageView.image = UIGraphicsGetImageFromCurrentImageContext();
-        UIGraphicsEndImageContext();
-        cell.imageView.layer.cornerRadius = 60/2;
-        cell.imageView.clipsToBounds = YES;
-        
-        cell.textLabel.text = people.name;
+        people = [_contactPeopleDict[key] objectAtIndex:indexPath.row];
     }
+    
+    cell.imageView.image = people.headerImage ? people.headerImage : [UIImage imageNamed:@"defult"];
+    CGSize itemSize = CGSizeMake(60, 60);
+    UIGraphicsBeginImageContextWithOptions(itemSize, NO, UIScreen.mainScreen.scale);
+    CGRect imageRect = CGRectMake(0.0, 0.0, itemSize.width, itemSize.height);
+    [cell.imageView.image drawInRect:imageRect];
+    cell.imageView.image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    cell.imageView.layer.cornerRadius = 60/2;
+    cell.imageView.clipsToBounds = YES;
+    
+    cell.textLabel.text = people.name;
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     return cell;
 }
 
@@ -128,12 +123,30 @@
     if (!self.selectedBtn.selected) {
         return 0.001;
     }else{
-        return 20;
+        return 30;
     }
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSectionr:(NSIndexPath *)indexPath{
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     return 0.001;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    GGPersonModel *model;
+    
+    if (!self.selectedBtn.selected) {
+        model = _dataSource[indexPath.row];
+    }else{
+        NSString *key = _keys[indexPath.section];
+        model = [_contactPeopleDict[key] objectAtIndex:indexPath.row];
+    }
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:model.name
+                                                    message:[NSString stringWithFormat:@"号码:%@",model.moblieArray]
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)navigationItemClick:(UIButton*)sender{
