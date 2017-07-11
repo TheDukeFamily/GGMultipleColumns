@@ -62,7 +62,7 @@ GGSingletonM(AddressBookHandle)
     if (IOS9_LATER) {
         [self getDataSourceFrom_IOS9_Ago:personModel authorizationFailure:failure];
     }else{
-        
+        [self getDataSourceFrom_IOS9_Ago:personModel authorizationFailure:failure];
     }
 }
 
