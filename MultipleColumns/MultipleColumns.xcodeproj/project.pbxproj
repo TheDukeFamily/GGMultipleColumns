@@ -11,17 +11,14 @@
 		042F1F141F146FD4008BB104 /* GGGetAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1F0F1F146FD4008BB104 /* GGGetAddressBook.m */; };
 		042F1F151F146FD4008BB104 /* GGPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1F111F146FD4008BB104 /* GGPersonModel.m */; };
 		042F1F181F1471E1008BB104 /* AddressBookTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1F171F1471E1008BB104 /* AddressBookTableVC.m */; };
+		042F1F1E1F14B3C1008BB104 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1F1D1F14B3C1008BB104 /* MainTableViewController.m */; };
 		0449AADC1F0CBECD003F5AE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0449AADB1F0CBECD003F5AE6 /* main.m */; };
 		0449AADF1F0CBECD003F5AE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0449AADE1F0CBECD003F5AE6 /* AppDelegate.m */; };
-		0449AAE51F0CBECD003F5AE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0449AAE31F0CBECD003F5AE6 /* Main.storyboard */; };
 		0449AAE81F0CBECD003F5AE6 /* MultipleColumns.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0449AAE61F0CBECD003F5AE6 /* MultipleColumns.xcdatamodeld */; };
 		0449AAEA1F0CBECD003F5AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0449AAE91F0CBECD003F5AE6 /* Assets.xcassets */; };
 		0449AAED1F0CBECD003F5AE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0449AAEB1F0CBECD003F5AE6 /* LaunchScreen.storyboard */; };
 		0449AAF81F0CBECD003F5AE6 /* MultipleColumnsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0449AAF71F0CBECD003F5AE6 /* MultipleColumnsTests.m */; };
 		0449AB031F0CBECD003F5AE6 /* MultipleColumnsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0449AB021F0CBECD003F5AE6 /* MultipleColumnsUITests.m */; };
-		04A0B5AF1F0CCE15000B2EEC /* DragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0B5AE1F0CCE15000B2EEC /* DragViewController.m */; };
-		04A0B5B21F0CCE46000B2EEC /* DragLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0B5B11F0CCE46000B2EEC /* DragLeftViewController.m */; };
-		04A0B5B81F0CCEE9000B2EEC /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0B5B71F0CCEE9000B2EEC /* MainTableViewController.m */; };
 		1C131D7B7B20335252FDAC40 /* libPods-MultipleColumns.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9253AAEEDE4DE988203E5237 /* libPods-MultipleColumns.a */; };
 /* End PBXBuildFile section */
 
@@ -52,11 +49,12 @@
 		042F1F121F146FD4008BB104 /* GGSingLeton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGSingLeton.h; sourceTree = "<group>"; };
 		042F1F161F1471E1008BB104 /* AddressBookTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookTableVC.h; sourceTree = "<group>"; };
 		042F1F171F1471E1008BB104 /* AddressBookTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookTableVC.m; sourceTree = "<group>"; };
+		042F1F1C1F14B3C1008BB104 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		042F1F1D1F14B3C1008BB104 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		0449AAD71F0CBECD003F5AE6 /* MultipleColumns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipleColumns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0449AADB1F0CBECD003F5AE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0449AADD1F0CBECD003F5AE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0449AADE1F0CBECD003F5AE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0449AAE41F0CBECD003F5AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0449AAE71F0CBECD003F5AE6 /* MultipleColumns.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MultipleColumns.xcdatamodel; sourceTree = "<group>"; };
 		0449AAE91F0CBECD003F5AE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0449AAEC1F0CBECD003F5AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,12 +65,6 @@
 		0449AAFE1F0CBECD003F5AE6 /* MultipleColumnsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipleColumnsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0449AB021F0CBECD003F5AE6 /* MultipleColumnsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultipleColumnsUITests.m; sourceTree = "<group>"; };
 		0449AB041F0CBECD003F5AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04A0B5AD1F0CCE15000B2EEC /* DragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragViewController.h; sourceTree = "<group>"; };
-		04A0B5AE1F0CCE15000B2EEC /* DragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragViewController.m; sourceTree = "<group>"; };
-		04A0B5B01F0CCE46000B2EEC /* DragLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragLeftViewController.h; sourceTree = "<group>"; };
-		04A0B5B11F0CCE46000B2EEC /* DragLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragLeftViewController.m; sourceTree = "<group>"; };
-		04A0B5B61F0CCEE9000B2EEC /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
-		04A0B5B71F0CCEE9000B2EEC /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		4068A3235735376EA901013E /* Pods-MultipleColumns.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultipleColumns.release.xcconfig"; path = "Pods/Target Support Files/Pods-MultipleColumns/Pods-MultipleColumns.release.xcconfig"; sourceTree = "<group>"; };
 		9253AAEEDE4DE988203E5237 /* libPods-MultipleColumns.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MultipleColumns.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C23C7A9011B948D81E0ED86 /* Pods-MultipleColumns.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultipleColumns.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MultipleColumns/Pods-MultipleColumns.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +120,13 @@
 			path = GGGetAddressBook;
 			sourceTree = "<group>";
 		};
+		042F1F1F1F14B675008BB104 /* RealizeDrawerDemo(抽屉实现) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "RealizeDrawerDemo(抽屉实现)";
+			sourceTree = "<group>";
+		};
 		0449AACE1F0CBECD003F5AE6 = {
 			isa = PBXGroup;
 			children = (
@@ -153,14 +152,13 @@
 		0449AAD91F0CBECD003F5AE6 /* MultipleColumns */ = {
 			isa = PBXGroup;
 			children = (
+				042F1F1F1F14B675008BB104 /* RealizeDrawerDemo(抽屉实现) */,
 				042F1F0A1F146FD4008BB104 /* AddressBookDemo(通讯录获取) */,
-				04A0B5AB1F0CCDC5000B2EEC /* implementation(实现文件) */,
 				0449AB101F0CBFD5003F5AE6 /* GGDrawing(绘图) */,
 				0449AADD1F0CBECD003F5AE6 /* AppDelegate.h */,
 				0449AADE1F0CBECD003F5AE6 /* AppDelegate.m */,
-				04A0B5B61F0CCEE9000B2EEC /* MainTableViewController.h */,
-				04A0B5B71F0CCEE9000B2EEC /* MainTableViewController.m */,
-				0449AAE31F0CBECD003F5AE6 /* Main.storyboard */,
+				042F1F1C1F14B3C1008BB104 /* MainTableViewController.h */,
+				042F1F1D1F14B3C1008BB104 /* MainTableViewController.m */,
 				0449AAE91F0CBECD003F5AE6 /* Assets.xcassets */,
 				0449AAEB1F0CBECD003F5AE6 /* LaunchScreen.storyboard */,
 				0449AAEE1F0CBECD003F5AE6 /* Info.plist */,
@@ -201,25 +199,6 @@
 			children = (
 			);
 			path = "GGDrawing(绘图)";
-			sourceTree = "<group>";
-		};
-		04A0B5AB1F0CCDC5000B2EEC /* implementation(实现文件) */ = {
-			isa = PBXGroup;
-			children = (
-				04A0B5AC1F0CCDF5000B2EEC /* Drag(抽屉) */,
-			);
-			path = "implementation(实现文件)";
-			sourceTree = "<group>";
-		};
-		04A0B5AC1F0CCDF5000B2EEC /* Drag(抽屉) */ = {
-			isa = PBXGroup;
-			children = (
-				04A0B5AD1F0CCE15000B2EEC /* DragViewController.h */,
-				04A0B5AE1F0CCE15000B2EEC /* DragViewController.m */,
-				04A0B5B01F0CCE46000B2EEC /* DragLeftViewController.h */,
-				04A0B5B11F0CCE46000B2EEC /* DragLeftViewController.m */,
-			);
-			path = "Drag(抽屉)";
 			sourceTree = "<group>";
 		};
 		5D0D9B1CEBDD4C216A9EFFF2 /* Frameworks */ = {
@@ -353,7 +332,6 @@
 			files = (
 				0449AAED1F0CBECD003F5AE6 /* LaunchScreen.storyboard in Resources */,
 				0449AAEA1F0CBECD003F5AE6 /* Assets.xcassets in Resources */,
-				0449AAE51F0CBECD003F5AE6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,16 +404,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04A0B5AF1F0CCE15000B2EEC /* DragViewController.m in Sources */,
 				042F1F151F146FD4008BB104 /* GGPersonModel.m in Sources */,
 				042F1F131F146FD4008BB104 /* GGAddressBookHandle.m in Sources */,
-				04A0B5B81F0CCEE9000B2EEC /* MainTableViewController.m in Sources */,
 				0449AAE81F0CBECD003F5AE6 /* MultipleColumns.xcdatamodeld in Sources */,
 				042F1F181F1471E1008BB104 /* AddressBookTableVC.m in Sources */,
 				042F1F141F146FD4008BB104 /* GGGetAddressBook.m in Sources */,
 				0449AADF1F0CBECD003F5AE6 /* AppDelegate.m in Sources */,
 				0449AADC1F0CBECD003F5AE6 /* main.m in Sources */,
-				04A0B5B21F0CCE46000B2EEC /* DragLeftViewController.m in Sources */,
+				042F1F1E1F14B3C1008BB104 /* MainTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,14 +447,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0449AAE31F0CBECD003F5AE6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0449AAE41F0CBECD003F5AE6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0449AAEB1F0CBECD003F5AE6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

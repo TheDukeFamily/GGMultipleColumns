@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "GGGetAddressBook.h"
-#import "AddressBookTableVC.h"
+#import "MainTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -25,7 +25,7 @@
     //初始化windows
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[AddressBookTableVC alloc] initWithStyle:UITableViewStyleGrouped]];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[MainTableViewController alloc] initWithStyle:UITableViewStylePlain]];
     [self.window makeKeyAndVisible];
     return YES;
 }

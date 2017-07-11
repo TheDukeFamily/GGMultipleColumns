@@ -2,17 +2,14 @@
 //  MainTableViewController.m
 //  MultipleColumns
 //
-//  Created by Mac on 2017/7/5.
+//  Created by Mac on 2017/7/11.
 //  Copyright © 2017年 Mr.Gao. All rights reserved.
 //
 
 #import "MainTableViewController.h"
+#import "AddressBookTableVC.h"
 
-#import <RESideMenu.h>
-#import "DragViewController.h"
-#import "DragLeftViewController.h"
-
-@interface MainTableViewController ()<RESideMenuDelegate>
+@interface MainTableViewController ()
 {
     NSArray *_titleArr;
 }
@@ -22,8 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    _titleArr = @[@"抽屉"];
+    self.navigationItem.title = @"一些小的示例";
+    
+    _titleArr = @[@"联系人列表"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,7 +29,6 @@
 }
 
 #pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -42,14 +39,12 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"mainCell"];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"mainCell"];
     }
-    
     cell.textLabel.text = _titleArr[indexPath.row];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     return cell;
 }
 
@@ -57,50 +52,13 @@
     switch (indexPath.row) {
         case 0:
         {
-            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[DragViewController alloc] init]];
-            DragLeftViewController *dragLeftVC = [[DragLeftViewController alloc] init];
-            RESideMenu *sideMenu = [[RESideMenu alloc] initWithContentViewController:nav leftMenuViewController:dragLeftVC rightMenuViewController:nil];
-            sideMenu.backgroundImage = [UIImage imageNamed:@"Stars"];
-            sideMenu.menuPreferredStatusBarStyle = 1; // UIStatusBarStyleLightContent
-            sideMenu.delegate = self;
-            sideMenu.contentViewShadowColor = [UIColor blackColor];
-            sideMenu.contentViewShadowOffset = CGSizeMake(0, 0);
-            sideMenu.contentViewShadowOpacity = 0.6;
-            sideMenu.contentViewShadowRadius = 20;
-            sideMenu.contentViewShadowEnabled = YES;
-            sideMenu.scaleMenuView= NO;
-            sideMenu.contentViewScaleValue = 1;
-            sideMenu.contentViewInPortraitOffsetCenterX = self.view.frame.size.width/2-50;
-            //    _sideMenuViewController.scaleContentView = NO;
-            [self presentViewController:sideMenu animated:YES completion:nil];
+            [self.navigationController pushViewController:[[AddressBookTableVC alloc] init] animated:YES];
         }
             break;
             
         default:
             break;
     }
-}
-
-#pragma mark RESideMenu Delegate
-
-- (void)sideMenu:(RESideMenu *)sideMenu willShowMenuViewController:(UIViewController *)menuViewController
-{
-    NSLog(@"willShowMenuViewController: %@", NSStringFromClass([menuViewController class]));
-}
-
-- (void)sideMenu:(RESideMenu *)sideMenu didShowMenuViewController:(UIViewController *)menuViewController
-{
-    NSLog(@"didShowMenuViewController: %@", NSStringFromClass([menuViewController class]));
-}
-
-- (void)sideMenu:(RESideMenu *)sideMenu willHideMenuViewController:(UIViewController *)menuViewController
-{
-    NSLog(@"willHideMenuViewController: %@", NSStringFromClass([menuViewController class]));
-}
-
-- (void)sideMenu:(RESideMenu *)sideMenu didHideMenuViewController:(UIViewController *)menuViewController
-{
-    NSLog(@"didHideMenuViewController: %@", NSStringFromClass([menuViewController class]));
 }
 
 @end
