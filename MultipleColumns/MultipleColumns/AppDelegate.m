@@ -27,6 +27,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[MainTableViewController alloc] initWithStyle:UITableViewStylePlain]];
     [self.window makeKeyAndVisible];
+    //11111111
     return YES;
 }
 
