@@ -26,7 +26,10 @@
     [super viewDidLoad];
     self.navigationItem.title = @"一些小的示例";
     
+    
+    
     _titleArr = @[@"联系人列表",@"抽屉效果"];
+    NSLog(@"%@",_titleArr);
 }
 
 - (void)didReceiveMemoryWarning {
