@@ -182,7 +182,6 @@
 			children = (
 				042F1F1F1F14B675008BB104 /* RealizeDrawerDemo(抽屉实现) */,
 				042F1F0A1F146FD4008BB104 /* AddressBookDemo(通讯录获取) */,
-				0449AB101F0CBFD5003F5AE6 /* GGDrawing(绘图) */,
 				0449AADD1F0CBECD003F5AE6 /* AppDelegate.h */,
 				0449AADE1F0CBECD003F5AE6 /* AppDelegate.m */,
 				042F1F1C1F14B3C1008BB104 /* MainTableViewController.h */,
@@ -222,13 +221,6 @@
 				0449AB041F0CBECD003F5AE6 /* Info.plist */,
 			);
 			path = MultipleColumnsUITests;
-			sourceTree = "<group>";
-		};
-		0449AB101F0CBFD5003F5AE6 /* GGDrawing(绘图) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "GGDrawing(绘图)";
 			sourceTree = "<group>";
 		};
 		5D0D9B1CEBDD4C216A9EFFF2 /* Frameworks */ = {
